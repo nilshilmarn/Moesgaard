@@ -12,6 +12,7 @@
 
 
  get_header();
+ get_template_part( 'template-parts/banner', 'title');
 ?>
 
 
@@ -27,16 +28,21 @@
                 while(have_posts())
                 {
                     the_post();
+
+                    if (has_post_thumbnail()) {
+
+                        the_post_thumbnail(
+                            'large',
+                            array(
+                                'class' => 'img-fluid'
+                            )
+                        );
+                    }
         ?>
-            <div class="col-8 offset-md-2 overflow-hidden">
+            <div class="col-md-8 offset-md-2 col-sm-12 offset-sm-0 overflow-hidden">
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
                 <?php 
-                    if (has_post_thumbnail()) {
-
-                        the_post_thumbnail( 'full');
-
-                    }
                     the_content();
                 ?>
 

@@ -21,7 +21,8 @@ if (!function_exists( 'moesgaard_theme_setup' ))
                 'comment-form',
                 'comment-list',
                 'gallery',
-                'caption'
+                'caption',
+                'custom-logo'
                 )
         );
         add_theme_support('customize-selective-refresh-widgets');
@@ -45,12 +46,11 @@ add_action('after_setup_theme', 'moesgaard_theme_setup');
 function moesgaard_assets() 
 {
     // Enqueue styles
-    wp_enqueue_style('bootstrap.min.css', get_theme_file_uri('assets/css/bootstrap.min.css'), array(), 'v5.3', 'all');
 
-    wp_enqueue_style('moesgaard', get_stylesheet_uri(), array('bootstrap.min.css'), 'v1.0', 'all');
+    wp_enqueue_style('moesgaard', get_stylesheet_uri(), array(), 'v1.0', 'all');
 
     // Enqueue scripts
-    wp_enqueue_script('bootstrap.min.js', get_theme_file_uri('assets/js/bootstrap.min.js'), array(), 'v5.3', true);
+    /* wp_enqueue_script('bootstrap.min.js', get_theme_file_uri('assets/js/bootstrap.min.js'), array(), 'v5.3', true); */
 
     if (is_singular() && comments_open() && get_option( 'thread_commnets'))
     {
@@ -92,6 +92,27 @@ function moesgaard_pagination()
 
 
 function my_custom_fonts() { 
-    wp_enqueue_style( 'my-custom-fonts', get_template_directory_uri() . 'assets/fonts/suisseIntl/stylesheet.css', false );
+    wp_enqueue_style( 'my-custom-fonts', get_template_directory_uri() . 'src/assets/fonts/suisseIntl/stylesheet.css', false );
 }
 add_action( 'wp_enqueue_scripts', 'my_custom_fonts' );
+
+
+
+function moesgaard_custom_logo_setup() {
+	$defaults = array(
+		'height'               => 100,
+		'width'                => 400,
+		'flex-height'          => true,
+		'flex-width'           => true,
+		'header-text'          => array( 'site-title', 'site-description' ),
+		'unlink-homepage-logo' => true, 
+	);
+	add_theme_support( 'custom-logo', $defaults );
+}
+add_action( 'after_setup_theme', 'moesgaard_custom_logo_setup' );
+
+
+function moesgaard_custom_excerpt_length( $length ) {
+    return 20;
+    }
+    add_filter( 'excerpt_length', 'moesgaard_custom_excerpt_length', 999 );

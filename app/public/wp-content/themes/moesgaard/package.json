@@ -1,0 +1,26 @@
+{
+  "name": "moesgaard",
+  "version": "1.0.0",
+  "description": "theme for moesgaard",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "sass --watch scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nilshilmarn/Moesgaard.git"
+  },
+  "author": "Nils Hilmar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nilshilmarn/Moesgaard/issues"
+  },
+  "homepage": "https://github.com/nilshilmarn/Moesgaard#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.18",
+    "bootstrap": "^5.3.3",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.71.1"
+  }
+}

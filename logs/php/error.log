@@ -1779,3 +1779,92 @@ Stack trace:
 #16 /Users/nilshilmar/Github/Moesgaard/app/public/index.php(17): require('/Users/nilshilm...')
 #17 {main}
   thrown in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/option.php on line 78
+[03-Mar-2024 14:07:09 UTC] PHP Fatal error:  Uncaught Error: Class "B2W_Elementor_Extension" not found in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/plugin-moesgaard/plugin-moesgaard.php:328
+Stack trace:
+#0 /Users/nilshilmar/Github/Moesgaard/app/public/wp-settings.php(473): include_once()
+#1 /Users/nilshilmar/Github/Moesgaard/app/public/wp-config.php(103): require_once('/Users/nilshilm...')
+#2 /Users/nilshilmar/Github/Moesgaard/app/public/wp-load.php(50): require_once('/Users/nilshilm...')
+#3 /Users/nilshilmar/Github/Moesgaard/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/nilshilm...')
+#4 {main}
+  thrown in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/plugin-moesgaard/plugin-moesgaard.php on line 328
+[03-Mar-2024 14:08:54 UTC] PHP Fatal error:  Uncaught Error: Class "B2W_Elementor_Extension" not found in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/plugin-moesgaard/plugin-moesgaard.php:328
+Stack trace:
+#0 /Users/nilshilmar/Github/Moesgaard/app/public/wp-settings.php(473): include_once()
+#1 /Users/nilshilmar/Github/Moesgaard/app/public/wp-config.php(103): require_once('/Users/nilshilm...')
+#2 /Users/nilshilmar/Github/Moesgaard/app/public/wp-load.php(50): require_once('/Users/nilshilm...')
+#3 /Users/nilshilmar/Github/Moesgaard/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/nilshilm...')
+#4 {main}
+  thrown in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/plugin-moesgaard/plugin-moesgaard.php on line 328
+[03-Mar-2024 14:09:09 UTC] PHP Fatal error:  Uncaught Error: Class "B2W_Elementor_Extension" not found in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/plugin-moesgaard/plugin-moesgaard.php:328
+Stack trace:
+#0 /Users/nilshilmar/Github/Moesgaard/app/public/wp-settings.php(473): include_once()
+#1 /Users/nilshilmar/Github/Moesgaard/app/public/wp-config.php(103): require_once('/Users/nilshilm...')
+#2 /Users/nilshilmar/Github/Moesgaard/app/public/wp-load.php(50): require_once('/Users/nilshilm...')
+#3 /Users/nilshilmar/Github/Moesgaard/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/nilshilm...')
+#4 {main}
+  thrown in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/plugin-moesgaard/plugin-moesgaard.php on line 328
+[03-Mar-2024 14:10:54 UTC] PHP Warning:  require_once(/Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/plugin-moesgaard/widgets/class-buttons.php): Failed to open stream: No such file or directory in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/plugin-moesgaard/plugin-moesgaard.php on line 317
+[03-Mar-2024 14:10:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/plugin-moesgaard/widgets/class-buttons.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/plugin-moesgaard/plugin-moesgaard.php:317
+Stack trace:
+#0 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-hook.php(324): Moesgaard_Elementor_Extension->init_widgets(Object(Elementor\Widgets_Manager))
+#1 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#3 /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/elementor/modules/dev-tools/deprecation.php(328): do_action_ref_array('elementor/widge...', Array)
+#4 /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/elementor/includes/managers/widgets.php(127): Elementor\Modules\DevTools\Deprecation->do_deprecated_action('elementor/widge...', Array, '3.5.0', 'elementor/widge...')
+#5 /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/elementor/includes/managers/widgets.php(342): Elementor\Widgets_Manager->init_widgets()
+#6 /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/elementor/includes/managers/widgets.php(365): Elementor\Widgets_Manager->get_widget_types()
+#7 /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/elementor/core/base/document.php(715): Elementor\Widgets_Manager->get_widget_types_config()
+#8 /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/elementor/includes/base/controls-stack.php(1042): Elementor\Core\Base\Document->get_initial_config()
+#9 /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/elementor/core/editor/loader/common/editor-common-scripts-settings.php(34): Elementor\Controls_Stack->get_config()
+#10 /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/elementor/core/editor/loader/v1/editor-v1-loader.php(76): Elementor\Core\Editor\Loader\Common\Editor_Common_Scripts_Settings::get()
+#11 /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/elementor/core/editor/editor.php(358): Elementor\Core\Editor\Loader\V1\Editor_V1_Loader->enqueue_scripts()
+#12 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-hook.php(324): Elementor\Core\Editor\Editor->enqueue_scripts('')
+#13 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#14 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#15 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/script-loader.php(2262): do_action('wp_enqueue_scri...')
+#16 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-hook.php(324): wp_enqueue_scripts('')
+#17 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#18 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#19 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/general-template.php(3052): do_action('wp_head')
+#20 /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/elementor/includes/editor-templates/editor-wrapper.php(31): wp_head()
+#21 /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/elementor/core/editor/loader/v1/editor-v1-loader.php(110): include('/Users/nilshilm...')
+#22 /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/elementor/core/editor/editor.php(163): Elementor\Core\Editor\Loader\V1\Editor_V1_Loader->print_root_template()
+#23 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-hook.php(324): Elementor\Core\Editor\Editor->init('')
+#24 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#25 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#26 /Users/nilshilmar/Github/Moesgaard/app/public/wp-admin/admin.php(419): do_action('admin_action_el...')
+#27 /Users/nilshilmar/Github/Moesgaard/app/public/wp-admin/post.php(12): require_once('/Users/nilshilm...')
+#28 {main}
+  thrown in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/plugins/plugin-moesgaard/plugin-moesgaard.php on line 317
+[03-Mar-2024 15:36:36 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[03-Mar-2024 15:38:52 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[03-Mar-2024 15:39:10 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[03-Mar-2024 15:43:32 UTC] PHP Parse error:  syntax error, unexpected identifier "row", expecting "," or ";" in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/themes/moesgaard/header.php on line 44
+[03-Mar-2024 15:44:38 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[03-Mar-2024 15:45:00 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[03-Mar-2024 17:56:15 UTC] PHP Warning:  Undefined array key 3 in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-query.php on line 3643
+[03-Mar-2024 17:56:29 UTC] PHP Warning:  Undefined array key 3 in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-query.php on line 3643
+[04-Mar-2024 07:26:57 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/update.php on line 211
+[04-Mar-2024 07:26:57 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/update.php on line 449
+[04-Mar-2024 07:26:57 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/update.php on line 730
+[04-Mar-2024 15:05:51 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[04-Mar-2024 15:06:13 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[04-Mar-2024 15:06:31 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[04-Mar-2024 18:26:41 UTC] PHP Warning:  Undefined variable $longRead_posts in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/themes/moesgaard/home.php on line 38
+[04-Mar-2024 18:26:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function the_post() on null in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/themes/moesgaard/home.php:38
+Stack trace:
+#0 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nilshilmar/Github/Moesgaard/app/public/wp-blog-header.php(19): require_once('/Users/nilshilm...')
+#2 /Users/nilshilmar/Github/Moesgaard/app/public/index.php(17): require('/Users/nilshilm...')
+#3 {main}
+  thrown in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/themes/moesgaard/home.php on line 38
+[04-Mar-2024 18:27:42 UTC] PHP Warning:  Undefined variable $longRead_posts in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/themes/moesgaard/home.php on line 38
+[04-Mar-2024 18:27:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function the_post() on null in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/themes/moesgaard/home.php:38
+Stack trace:
+#0 /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nilshilmar/Github/Moesgaard/app/public/wp-blog-header.php(19): require_once('/Users/nilshilm...')
+#2 /Users/nilshilmar/Github/Moesgaard/app/public/index.php(17): require('/Users/nilshilm...')
+#3 {main}
+  thrown in /Users/nilshilmar/Github/Moesgaard/app/public/wp-content/themes/moesgaard/home.php on line 38
+[04-Mar-2024 18:44:59 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[04-Mar-2024 18:45:14 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/nilshilmar/Github/Moesgaard/app/public/wp-includes/class-wp-customize-widgets.php on line 905

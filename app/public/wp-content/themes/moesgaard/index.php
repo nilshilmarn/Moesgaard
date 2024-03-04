@@ -9,17 +9,14 @@
  */
 
 
+get_header();
+get_template_part( 'template-parts/banner', 'title');
+
 ?>
-
-
-
-
-<?php get_header(); ?>
-
     <div class="content-area">
         <div class="container">
             <div class="row">
-                <div class="col-8 offset-md-2 overflow-hidden">
+                <div class="col-md-8 offset-md-2 col-sm-12 offset-sm-0 overflow-hidden">
 
 <?php 
 
